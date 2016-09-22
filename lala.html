@@ -1,0 +1,1450 @@
+<!DOCTYPE html>
+<!-- saved from url=(0034)https://ux.mailchimp.com/patterns/ -->
+<html class="dj_webkit dj_chrome dj_contentbox">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Grid System | MailChimp</title>
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta content="//mailchimp.com/browserconfig.xml" name=
+"msapplication-config">
+<meta content="#52BAD5" name="msapplication-TileColor">
+<meta content="//static.mailchimp.com/web/favicon.png" name=
+"msapplication-TileImage">
+<link href="./Grid System _ MailChimp_files/css" rel="stylesheet"
+type="text/css">
+<link rel="stylesheet" type="text/css" href=
+"./Grid System _ MailChimp_files/theone.css">
+<link rel="stylesheet" type="text/css" href=
+"./Grid System _ MailChimp_files/pages.css">
+<link href=
+"https://ux.mailchimp.com/images/apple-touch-icon-180x180.png" rel=
+"apple-touch-icon" sizes="180x180">
+<link href="https://ux.mailchimp.com/images/touch-icon-192x192.png"
+rel="icon" sizes="192x192">
+<link rel="shortcut icon" href=
+"https://ux.mailchimp.com/favicon.ico">
+<link rel="stylesheet" type="text/css" href=
+"./Grid System _ MailChimp_files/patterns.css">
+<script async src=
+"./Grid%20System%20_%20MailChimp_files/analytics.js">
+</script>
+<script type="text/javascript">
+                        var xhr_open = XMLHttpRequest.prototype.open;
+                        XMLHttpRequest.prototype.open = function(method, url, async, user, password) {
+                        xhr_open.call(this, method, url, async, user, password);
+                        if (async === true && url.match(/^\/(?!\/)+/)) {
+                        this.setRequestHeader('X-CSRF-Token', '4f712c404d3dd635ca670a186a7217dfd0d495b4');
+                        }
+                        }
+</script>
+<script src="./Grid%20System%20_%20MailChimp_files/dojo.js"
+data-dojo-config=
+"parseOnLoad: true, usePlainJson: true, isDebug: false">
+</script>
+<script src="./Grid%20System%20_%20MailChimp_files/mccommon.js">
+</script>
+<script type="text/javascript">
+                        dojo.require("mojo.utils");
+                        require(["mojo/widgets/Dialog"]);
+                        // Leaving it globally since we used it around
+                        var rootUrl = '/';
+
+                        require([
+                        "dojo/_base/lang",
+                        "mojo/user",
+                        "mojo/context"
+                        ], function(lang, user, context) {
+                        // Add defaults to the actual modules.
+
+                        lang.mixin(context, {
+                        'rootUrl': '/',
+
+                        'proxyBaseUrl': "https:\/\/d2q0qd5iz04n9u.cloudfront.net\/_ssl\/proxy.php",
+
+                        'listManageDomain': "list-manage.com",
+
+                        'pusherKey': "74d7188a67461f12439a",
+
+                        'cdnImagesDomain': "cdn-images.mailchimp.com",
+
+                        'galleryDomain': "gallery.mailchimp.com",
+
+                        'avestaEnvironment': "prod"                             });
+
+                        });
+</script>
+<link rel="stylesheet" href=
+"./Grid System _ MailChimp_files/codemirror.css">
+<link rel="stylesheet" href=
+"./Grid System _ MailChimp_files/mc-codemirror.css">
+<link rel="stylesheet" href=
+"./Grid System _ MailChimp_files/mc-codemirror-themes.css">
+<script type="text/javascript">
+                        require([
+                        "dojo/_base/xhr",
+                        "dojo/query",
+                        "dojo/_base/array",
+                        'codemirror4/lib/codemirror',
+                        'codemirror4/lib/util/formatting',
+                        'codemirror4/mode/htmlmixed/htmlmixed',
+                        "dojo/domReady!"
+                        ], function(xhr, query, array, CodeMirror, formatting) {
+                        formatting.addFormat(CodeMirror);
+
+                        var array_ta = query('textarea.pattern');
+                        array.forEach(array_ta, function(item, i){
+                        var editor = applyCodeMirrorTo(item);
+                        CodeMirror.commands["selectAll"](editor);
+                        autoFormatSelection(editor);
+                        });
+
+                        function applyCodeMirrorTo(textArea) {
+                        var _textArea = textArea;
+                        if(_textArea != null){
+                        var cm = CodeMirror.fromTextArea(_textArea, {
+                              "mode": "text/html",
+                              "readOnly":true,
+                              "theme": "default",
+                              "autoClearEmptyLines": true,
+                              "lineWrapping": true,
+                              "lineNumbers": true
+                        });
+                        return cm;
+                        }
+                        }
+
+                        function getSelectedRange(editor) {
+                        return { "from": editor.getCursor(true), "to": editor.getCursor(false) };
+                        }
+
+                        function autoFormatSelection(editor) {
+                        var range = getSelectedRange(editor);
+                        editor.autoFormatRange(range.from, range.to);
+                        CodeMirror.commands['goPageUp'](editor);
+                        }
+                        });
+</script>
+<script type="text/javascript" src=
+"./Grid%20System%20_%20MailChimp_files/swfobject.js">
+</script>
+<script type="text/javascript">
+                        require([
+                        "dojo/query",
+                        "dojo/dom-class",
+                        "dojo/_base/xhr",
+                        "dojo/window",
+                        //Custom libs
+                        "mojo/app/common/patternsNav",
+                        "mojo/touch/no-delay",
+                        "mojo/app/common/sticky-hoverlist",
+                        "dojo/domReady!"
+                        ], function(query, domClass, xhr, win, patternsNav){
+                        patternsNav.init();
+                        mojo.nav = patternsNav;
+                        patternsNav.trapEvents();
+                        // disguise.init();
+                        });
+
+</script>
+<script>
+                        (function(i,s,o,g,r,a,m){ i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                        (i[r].q=i[r].q||[]).push(arguments) },i[r].l=1*new Date();a=s.createElement(o),
+                        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+                        ga("create","UA-329148-81","auto",{ allowLinker:!0 }),
+                        ga("require","linker"),
+                        ga("linker:autoLink",[/(.*\.)?mailchimp(app)?\.com$/],!1,!0),
+                        ga("send","pageview", []);
+
+                        // Save tracking id and client id to a cookie so we can use them server side
+                        require(["mojo/utils"], function(utils) {
+                        if (!utils.getCookie('_mcga')) {
+                        ga(function(tracker) {
+                        var gaData = {};
+                        gaData.tid = tracker.get('trackingId');
+                        gaData.cid = tracker.get('clientId');
+                        document.cookie = '_mcga='+ JSON.stringify(gaData) +';path=/;domain=.mailchimp.com';
+                        });
+                        }
+                        });
+</script>
+</head>
+<body class=
+"mcd active-compliance-alert relative full-height-vh flex flex-col overflow-hidden">
+
+<div class="main-navigation selfclear" aria-hidden="false">
+<div class="line selfclear">
+<nav class="navigation-left group size2of3 nochange">
+<ul class="linear-list selfclear">
+<li class="nav-link small-meta fwb show-mobile"><a href=
+"https://ux.mailchimp.com/patterns/#" aria-label=
+"Menu button —&nbsp;click to toggle menu" class=
+"menu-button no-delay gray-link alignc padding--lv3 !padding-top-bottom--lv0"
+onclick=
+"ga('send', 'event', 'dashboard', 'main navigation', 'hamburger');">
+</a></li>
+<li class="nav-link small-meta fwb branding"><a href=
+"https://ux.mailchimp.com/" aria-label="Brand-icon" class=
+"no-delay gray-link alignc padding--lv3 !padding-top-bottom--lv0"
+id="freddielink" onclick=
+"ga('send', 'event', 'dashboard', 'main navigation', 'brand-icon');">
+<img src="./Grid%20System%20_%20MailChimp_files/freddie_wink.svg"
+alt="MailChimp logo" width="36"></a></li>
+<li class="nav-link small-meta fwb hide-mobile"><a href=
+"https://ux.mailchimp.com/patterns" class=
+"selected gray-link alignc padding--lv3 !padding-top-bottom--lv0"
+onclick=
+"ga('send', 'event', 'dashboard', 'main navigation', '/patterns');">
+Patterns</a></li>
+<li class="nav-link small-meta fwb hide-mobile"><a href=
+"https://ux.mailchimp.com/patterns/about" title=
+"About the Pattern libray" class=
+" gray-link alignc padding--lv3 !padding-top-bottom--lv0" onclick=
+"ga('send', 'event', 'dashboard', 'main navigation', '/patterns/about');">
+About</a></li>
+</ul>
+</nav>
+</div>
+</div>
+<div aria-hidden="true" class=
+"phone-overlay-container navigation-overlay selfclear">
+<div title="Close menu" class=
+"close-overlay close-left freddicon cross absolute cursor-pointer">
+</div>
+<div class="line selfclear">
+<nav class="lastGroup size1of1 overflow-visible selfclear">
+<ul class="primary-links selfclear">
+<li class="local-nav-container mar-b0">
+<div class="mobile-top-nav"><a href=
+"https://ux.mailchimp.com/paterns/" title=
+"UX Patterns and elements used in Mailchimp" class=
+"phone-menu-link relative padding--lv3 noborder selected" onclick=
+"ga('send', 'event', 'dashboard', 'phone navigation', '/paterns/');">
+Patterns</a></div>
+<ul class=
+"local-nav padding--lv3 !padding-top-bottom--lv0 !padding-right--lv0 selfclear">
+<li class="selected"><a href="https://ux.mailchimp.com/patterns/"
+title="Grid System" onclick=
+"ga('send', 'event', 'dashboard', 'phone navigation', '/patterns/');">
+<span class="nav-label">Grid System</span></a></li>
+<li class=""><a href="https://ux.mailchimp.com/patterns/typography"
+title="Typography" onclick=
+"ga('send', 'event', 'dashboard', 'phone navigation', '/patterns/typography');">
+<span class="nav-label">Typography</span></a></li>
+<li class=""><a href="https://ux.mailchimp.com/patterns/forms"
+title="Form Elements" onclick=
+"ga('send', 'event', 'dashboard', 'phone navigation', '/patterns/forms');">
+<span class="nav-label">Form Elements</span></a></li>
+<li class=""><a href="https://ux.mailchimp.com/patterns/navigation"
+title="Navigation" onclick=
+"ga('send', 'event', 'dashboard', 'phone navigation', '/patterns/navigation');">
+<span class="nav-label">Navigation</span></a></li>
+<li class=""><a href="https://ux.mailchimp.com/patterns/tables"
+title="Tables" onclick=
+"ga('send', 'event', 'dashboard', 'phone navigation', '/patterns/tables');">
+<span class="nav-label">Tables</span></a></li>
+<li class=""><a href="https://ux.mailchimp.com/patterns/lists"
+title="Lists" onclick=
+"ga('send', 'event', 'dashboard', 'phone navigation', '/patterns/lists');">
+<span class="nav-label">Lists</span></a></li>
+<li class=""><a href="https://ux.mailchimp.com/patterns/slats"
+title="Slats" onclick=
+"ga('send', 'event', 'dashboard', 'phone navigation', '/patterns/slats');">
+<span class="nav-label">Slats</span></a></li>
+<li class=""><a href="https://ux.mailchimp.com/patterns/stats"
+title="Stat/Data blocks" onclick=
+"ga('send', 'event', 'dashboard', 'phone navigation', '/patterns/stats');">
+<span class="nav-label">Stats/Data</span></a></li>
+<li class=""><a href="https://ux.mailchimp.com/patterns/feedback"
+title="Feedback" onclick=
+"ga('send', 'event', 'dashboard', 'phone navigation', '/patterns/feedback');">
+<span class="nav-label">Feedback</span></a></li>
+<li class=""><a href="https://ux.mailchimp.com/patterns/dialogs"
+title="Dialogs" onclick=
+"ga('send', 'event', 'dashboard', 'phone navigation', '/patterns/dialogs');">
+<span class="nav-label">Dialogs</span></a></li>
+<li class=""><a href="https://ux.mailchimp.com/patterns/icons"
+title="Freddicons" onclick=
+"ga('send', 'event', 'dashboard', 'phone navigation', '/patterns/icons');">
+<span class="nav-label">Freddicons</span></a></li>
+<li class=""><a href="https://ux.mailchimp.com/patterns/helpers"
+title="Helper Classes" onclick=
+"ga('send', 'event', 'dashboard', 'phone navigation', '/patterns/helpers');">
+<span class="nav-label">Helper Classes</span></a></li>
+</ul>
+</li>
+<li><a href="https://ux.mailchimp.com/patterns/about/" title=
+"About the pattern library" class=
+"phone-menu-link relative padding--lv3" onclick=
+"ga('send', 'event', 'dashboard', 'phone navigation', '/patterns/about/');">
+About</a></li>
+</ul>
+</nav>
+</div>
+</div>
+<div aria-hidden="true" class=
+"tablet-overlay-container navigation-overlay selfclear hide-phone">
+<div title="Close menu" class=
+"close-overlay close-left freddicon cross absolute cursor-pointer">
+</div>
+<div class="line selfclear">
+<nav class="lastGroup size1of3 centered selfclear">
+<ul class="alignc selfclear">
+<li><a href="https://ux.mailchimp.com/patterns/" title=
+"UX Patterns and elemnts used in Mailchimp" class=
+"tablet-menu-link inline-block relative padding--lv5 selected"
+onclick=
+"ga('send', 'event', 'dashboard', 'tablet navigation', 'tablet-menu patterns');">
+Patterns</a></li>
+<li><a href="https://ux.mailchimp.com/patterns/about/" title=
+"About the pattern library" class=
+"tablet-menu-link inline-block relative padding--lv5" onclick=
+"ga('send', 'event', 'dashboard', 'tablet navigation', 'tablet-menu about');">
+About</a></li>
+</ul>
+</nav>
+</div>
+</div>
+<div id="slot-campaignChecklistStatusBar"></div>
+<div id="wrap" class="wrap flex overflow-auto-y">
+<div id="main-content" class=
+"main-content height-inherit flex flex-col mc-content selfclear">
+<div class="lastUnit size1of1 overflow-visible">
+<div id="av-flash-block" class="c-flashBlock"></div>
+</div>
+<div class="line">
+<div class=
+"unit size1of4 padding--lv6 !padding-left-right--lv0 hide-phone">
+<ul class="regular padding--lv3">
+<li class="selected"><a href="https://ux.mailchimp.com/patterns/"
+title="Grid System"><span class="nav-label">Grid
+System</span></a></li>
+<li class=""><a href="https://ux.mailchimp.com/patterns/typography"
+title="Typography"><span class=
+"nav-label">Typography</span></a></li>
+<li class=""><a href="https://ux.mailchimp.com/patterns/forms"
+title="Form Elements"><span class="nav-label">Form
+Elements</span></a></li>
+<li class=""><a href="https://ux.mailchimp.com/patterns/navigation"
+title="Navigation"><span class=
+"nav-label">Navigation</span></a></li>
+<li class=""><a href="https://ux.mailchimp.com/patterns/tables"
+title="Tables"><span class="nav-label">Tables</span></a></li>
+<li class=""><a href="https://ux.mailchimp.com/patterns/lists"
+title="Lists"><span class="nav-label">Lists</span></a></li>
+<li class=""><a href="https://ux.mailchimp.com/patterns/slats"
+title="Slats"><span class="nav-label">Slats</span></a></li>
+<li class=""><a href="https://ux.mailchimp.com/patterns/stats"
+title="Stat/Data blocks"><span class=
+"nav-label">Stats/Data</span></a></li>
+<li class=""><a href="https://ux.mailchimp.com/patterns/feedback"
+title="Feedback"><span class="nav-label">Feedback</span></a></li>
+<li class=""><a href="https://ux.mailchimp.com/patterns/dialogs"
+title="Dialogs"><span class="nav-label">Dialogs</span></a></li>
+<li class=""><a href="https://ux.mailchimp.com/patterns/icons"
+title="Freddicons"><span class=
+"nav-label">Freddicons</span></a></li>
+<li class=""><a href="https://ux.mailchimp.com/patterns/helpers"
+title="Helper Classes"><span class="nav-label">Helper
+Classes</span></a></li>
+</ul>
+</div>
+<div class="lastUnit size3of4">
+<div role="main" id="content" class="content selfclear relative">
+<div class="lastUnit size1of1 header">
+<h1>Grid System</h1>
+</div>
+<div class="line local-nav-container">
+<div class="lastUnit size1of1">
+<p class="mobile-top-nav nomargin full-width fwb"><a href=
+"https://ux.mailchimp.com/patterns/#">Navigation</a></p>
+<ul class="local-nav selfclear">
+<li><a href="https://ux.mailchimp.com/patterns/#grid-sizes">Grid
+sizes</a></li>
+<li><a href="https://ux.mailchimp.com/patterns/#grid-gutter">Grid
+gutter</a></li>
+<li><a href="https://ux.mailchimp.com/patterns/#mixed-grids">Mixed
+grids</a></li>
+<li><a href=
+"https://ux.mailchimp.com/patterns/#grid-responsive">Responsive
+columns</a></li>
+<li><a href="https://ux.mailchimp.com/patterns/#nested-grid">Nested
+grids</a></li>
+</ul>
+</div>
+</div>
+<div id="grid-sizes" class="line below48">
+<div class="size1of1 lastUnit">
+<p class="full-width below48">Our grid system is composed of 8
+flexible columns with a gutter between columns of 30px. We apply
+<a href=
+"http://www.paulirish.com/2012/box-sizing-border-box-ftw/">border-box</a>
+so that the border and padding is included in the width of the grid
+columns.</p>
+<h3>Grid sizes</h3>
+</div>
+<div class="line lastUnit below48">
+<h4>Size 1 of 1</h4>
+<div class="lastUnit size1of1 alignc bg-b1">
+<p class="grid-filler">1 / 1</p>
+</div>
+</div>
+<div class="line lastUnit below48">
+<h4>Size 1 of 2</h4>
+<div class="unit size1of2 maintain-width alignc bg-b1">
+<p class="grid-filler">1 / 2</p>
+</div>
+<div class="lastUnit size1of2 alignc bg-b1">
+<p class="grid-filler">1 / 2</p>
+</div>
+</div>
+<div class="line lastUnit below48">
+<h4>Size 1of 3</h4>
+<div class="unit size1of3 alignc bg-b1">
+<p class="grid-filler">1 / 3</p>
+</div>
+<div class="unit size1of3 alignc bg-b1">
+<p class="grid-filler">1 / 3</p>
+</div>
+<div class="unit size1of3 lastUnit alignc bg-b1">
+<p class="grid-filler">1 / 3</p>
+</div>
+</div>
+<div class="line lastUnit below48">
+<h4>Size 1of 4</h4>
+<div class="unit size1of4 alignc bg-b1">
+<p class="grid-filler">1 / 4</p>
+</div>
+<div class="unit size1of4 alignc bg-b1">
+<p class="grid-filler">1 / 4</p>
+</div>
+<div class="unit size1of4 alignc bg-b1">
+<p class="grid-filler">1 / 4</p>
+</div>
+<div class="unit size1of4 lastUnit alignc bg-b1">
+<p class="grid-filler">1 / 4</p>
+</div>
+</div>
+<div class="line lastUnit below48">
+<h4>Size 1of 8</h4>
+<div class="unit size1of8 alignc bg-b1">
+<p class="grid-filler">1 / 8</p>
+</div>
+<div class="unit size1of8 alignc bg-b1">
+<p class="grid-filler">1 / 8</p>
+</div>
+<div class="unit size1of8 alignc bg-b1">
+<p class="grid-filler">1 / 8</p>
+</div>
+<div class="unit size1of8 alignc bg-b1">
+<p class="grid-filler">1 / 8</p>
+</div>
+<div class="unit size1of8 alignc bg-b1">
+<p class="grid-filler">1 / 8</p>
+</div>
+<div class="unit size1of8 alignc bg-b1">
+<p class="grid-filler">1 / 8</p>
+</div>
+<div class="unit size1of8 alignc bg-b1">
+<p class="grid-filler">1 / 8</p>
+</div>
+<div class="unit size1of8 lastUnit alignc bg-b1">
+<p class="grid-filler">1 / 8</p>
+</div>
+</div>
+<div class="line">
+<div class="unit size1of2 maintain-width">
+<textarea class="pattern code" style=
+"display: none;">&lt;div class="line"&gt; &lt;div class="unit size1of3"&gt; &lt;/div&gt; &lt;div class="unit size1of3"&gt; &lt;/div&gt; &lt;div class="lastUnit size1of3"&gt; &lt;/div&gt; &lt;/div&gt;</textarea>
+<div class="CodeMirror cm-s-default CodeMirror-wrap">
+<div style=
+"overflow: hidden; position: relative; width: 3px; height: 0px; top: 5px; left: 45px;">
+<textarea autocorrect="off" autocapitalize="off" spellcheck="false"
+style=
+"position: absolute; padding: 0px; width: 1000px; height: 1em; outline: none;"
+tabindex="0"></textarea></div>
+<div class="CodeMirror-hscrollbar" style=
+"left: 29px; min-height: 18px;">
+<div style="height: 100%; min-height: 1px; width: 0px;"></div>
+</div>
+<div class="CodeMirror-vscrollbar" style="min-width: 18px;">
+<div style="min-width: 1px; height: 0px;"></div>
+</div>
+<div class="CodeMirror-scrollbar-filler"></div>
+<div class="CodeMirror-gutter-filler"></div>
+<div class="CodeMirror-scroll" tabindex="-1">
+<div class="CodeMirror-sizer" style=
+"margin-left: 29px; min-height: 224px;">
+<div style="position: relative; top: 0px;">
+<div class="CodeMirror-lines">
+<div style="position: relative; outline: none;">
+<div class="CodeMirror-measure">
+<div style="width: 50px; height: 50px; overflow-x: scroll;"></div>
+</div>
+<div class="CodeMirror-measure"></div>
+<div style="position: relative; z-index: 1;"></div>
+<div class="CodeMirror-cursors">
+<div class="CodeMirror-cursor" style=
+"left: 15px; top: 0px; height: 24px;">&nbsp;</div>
+</div>
+<div class="CodeMirror-code">
+<div style="position: relative;">
+<div class="CodeMirror-gutter-wrapper" style=
+"position: absolute; left: -29px;">
+<div class="CodeMirror-linenumber CodeMirror-gutter-elt" style=
+"left: 0px; width: 20px;">1</div>
+</div>
+<pre class=""><span style="padding-right: 0.1px;"><span class=
+"cm-tag cm-bracket">&lt;</span><span class=
+"cm-tag">div</span> <span class=
+"cm-attribute">class</span>=<span class=
+"cm-string">"line"</span><span class=
+"cm-tag cm-bracket">&gt;</span> </span></pre></div>
+<div style="position: relative;">
+<div class="CodeMirror-gutter-wrapper" style=
+"position: absolute; left: -29px;">
+<div class="CodeMirror-linenumber CodeMirror-gutter-elt" style=
+"left: 0px; width: 20px;">2</div>
+</div>
+<pre class=""><span style=
+"padding-right: 0.1px;">      <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"unit size1of3"</span><span class="cm-tag cm-bracket">&gt;</span> </span></pre></div>
+<div style="position: relative;">
+<div class="CodeMirror-gutter-wrapper" style=
+"position: absolute; left: -29px;">
+<div class="CodeMirror-linenumber CodeMirror-gutter-elt" style=
+"left: 0px; width: 20px;">3</div>
+</div>
+<pre class=""><span style=
+"padding-right: 0.1px;">      <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span> </span></pre></div>
+<div style="position: relative;">
+<div class="CodeMirror-gutter-wrapper" style=
+"position: absolute; left: -29px;">
+<div class="CodeMirror-linenumber CodeMirror-gutter-elt" style=
+"left: 0px; width: 20px;">4</div>
+</div>
+<pre class=""><span style=
+"padding-right: 0.1px;">      <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"unit size1of3"</span><span class="cm-tag cm-bracket">&gt;</span> </span></pre></div>
+<div style="position: relative;">
+<div class="CodeMirror-gutter-wrapper" style=
+"position: absolute; left: -29px;">
+<div class="CodeMirror-linenumber CodeMirror-gutter-elt" style=
+"left: 0px; width: 20px;">5</div>
+</div>
+<pre class=""><span style=
+"padding-right: 0.1px;">      <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span> </span></pre></div>
+<div style="position: relative;">
+<div class="CodeMirror-gutter-wrapper" style=
+"position: absolute; left: -29px;">
+<div class="CodeMirror-linenumber CodeMirror-gutter-elt" style=
+"left: 0px; width: 20px;">6</div>
+</div>
+<pre class=""><span style=
+"padding-right: 0.1px;">      <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"lastUnit size1of3"</span><span class="cm-tag cm-bracket">&gt;</span> </span></pre></div>
+<div style="position: relative;">
+<div class="CodeMirror-gutter-wrapper" style=
+"position: absolute; left: -29px;">
+<div class="CodeMirror-linenumber CodeMirror-gutter-elt" style=
+"left: 0px; width: 20px;">7</div>
+</div>
+<pre class=""><span style=
+"padding-right: 0.1px;">      <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span> </span></pre></div>
+<div style="position: relative;">
+<div class="CodeMirror-gutter-wrapper" style=
+"position: absolute; left: -29px;">
+<div class="CodeMirror-linenumber CodeMirror-gutter-elt" style=
+"left: 0px; width: 20px;">8</div>
+</div>
+<pre class=""><span style="padding-right: 0.1px;"><span class=
+"cm-tag cm-bracket">&lt;/</span><span class=
+"cm-tag">div</span><span class=
+"cm-tag cm-bracket">&gt;</span></span></pre></div>
+<div style="position: relative;">
+<div class="CodeMirror-gutter-wrapper" style=
+"position: absolute; left: -29px;">
+<div class="CodeMirror-linenumber CodeMirror-gutter-elt" style=
+"left: 0px; width: 20px;">9</div>
+</div>
+<pre class=""><span style=
+"padding-right: 0.1px;"><span>​</span></span></pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div style=
+"position: absolute; height: 30px; width: 1px; top: 224px;"></div>
+<div class="CodeMirror-gutters" style="height: 224px;">
+<div class="CodeMirror-gutter CodeMirror-linenumbers" style=
+"width: 28px;"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="lastUnit size1of2 notes">
+<p>When using the grid, wrap the columns using a <code>line</code>
+and use <code>lastUnit</code> for the last column. Refer to
+<a href="https://github.com/stubbornella/oocss/wiki/grids#base-classes">
+OOCSS base classes</a> to learn more about the grid classes.</p>
+<p>This example applies to the other ratios we support: 1/1, 1/2,
+1/3, 1/4, and 1/8</p>
+</div>
+</div>
+</div>
+<div id="grid-gutter" class="line below48">
+<div class="size1of1 lastUnit">
+<h3>Grid gutter</h3>
+<p class="full-width below24">Our grid columns have a 15px padding
+on either side that results in a 30px gutter between columns and a
+15px gutter on the grid edges. Even though our columns are fluid,
+the gutter remains constant.</p>
+</div>
+<div class="line lastUnit">
+<div class="unit size1of3 alignc bg-r2">
+<p class="gutter-filler">1 / 3</p>
+</div>
+<div class="unit size1of3 alignc bg-r2">
+<p class="gutter-filler">1 / 3</p>
+</div>
+<div class="lastUnit size1of3 alignc bg-r2">
+<p class="gutter-filler">1 / 3</p>
+</div>
+</div>
+</div>
+<div id="mixed-grids" class="line below48">
+<div class="size1of1 lastUnit">
+<h3>Mixed grids</h3>
+<p class="full-width below24">The grid layout is easily extended by
+nesting and mixing different column sizes.</p>
+<div class="line section">
+<div class="unit size1of8 alignc bg-y1">
+<p class="grid-filler">1 / 8</p>
+</div>
+<div class="unit size7of8 alignc bg-b1">
+<p class="grid-filler">7 / 8</p>
+</div>
+</div>
+<div class="line section">
+<div class="unit size3of4 alignc bg-b1">
+<p class="grid-filler">3 / 4</p>
+</div>
+<div class="unit size1of4 alignc bg-y1">
+<p class="grid-filler">1 / 4</p>
+</div>
+</div>
+<div class="line section">
+<div class="unit size1of3 alignc bg-y1">
+<p class="grid-filler">1 / 3</p>
+</div>
+<div class="group size2of3 alignc bg-b1">
+<div class="unit size1of2 maintain-width bg-g2">
+<p class="grid-filler">1 / 2</p>
+</div>
+<div class="lastUnit size1of2 bg-g2">
+<p class="grid-filler">1 / 2</p>
+</div>
+</div>
+</div>
+</div>
+<div class="line">
+<div class="unit size1of2 maintain-width">
+<textarea class="pattern code" style=
+"display: none;">&lt;div class="line"&gt; &lt;div class="unit size1of3"&gt; &lt;/div&gt; &lt;div class="group size2of3"&gt; &lt;div class="unit size1of2"&gt;&lt;/div&gt; &lt;div class="lastUnit size1of2"&gt;&lt;/div&gt; &lt;/div&gt; &lt;/div&gt;</textarea>
+<div class="CodeMirror cm-s-default CodeMirror-wrap">
+<div style=
+"overflow: hidden; position: relative; width: 3px; height: 0px; top: 5px; left: 45px;">
+<textarea autocorrect="off" autocapitalize="off" spellcheck="false"
+style=
+"position: absolute; padding: 0px; width: 1000px; height: 1em; outline: none;"
+tabindex="0"></textarea></div>
+<div class="CodeMirror-hscrollbar" style=
+"left: 29px; min-height: 18px;">
+<div style="height: 100%; min-height: 1px; width: 0px;"></div>
+</div>
+<div class="CodeMirror-vscrollbar" style="min-width: 18px;">
+<div style="min-width: 1px; height: 0px;"></div>
+</div>
+<div class="CodeMirror-scrollbar-filler"></div>
+<div class="CodeMirror-gutter-filler"></div>
+<div class="CodeMirror-scroll" tabindex="-1">
+<div class="CodeMirror-sizer" style=
+"margin-left: 29px; min-height: 272px;">
+<div style="position: relative; top: 0px;">
+<div class="CodeMirror-lines">
+<div style="position: relative; outline: none;">
+<div class="CodeMirror-measure">
+<pre>x</pre>
+<div class="CodeMirror-linenumber CodeMirror-gutter-elt">
+<div>11</div>
+</div>
+</div>
+<div class="CodeMirror-measure"></div>
+<div style="position: relative; z-index: 1;"></div>
+<div class="CodeMirror-cursors">
+<div class="CodeMirror-cursor" style=
+"left: 15px; top: 0px; height: 24px;">&nbsp;</div>
+</div>
+<div class="CodeMirror-code">
+<div style="position: relative;">
+<div class="CodeMirror-gutter-wrapper" style=
+"position: absolute; left: -29px;">
+<div class="CodeMirror-linenumber CodeMirror-gutter-elt" style=
+"left: 0px; width: 20px;">1</div>
+</div>
+<pre class=""><span style="padding-right: 0.1px;"><span class=
+"cm-tag cm-bracket">&lt;</span><span class=
+"cm-tag">div</span> <span class=
+"cm-attribute">class</span>=<span class=
+"cm-string">"line"</span><span class=
+"cm-tag cm-bracket">&gt;</span> </span></pre></div>
+<div style="position: relative;">
+<div class="CodeMirror-gutter-wrapper" style=
+"position: absolute; left: -29px;">
+<div class="CodeMirror-linenumber CodeMirror-gutter-elt" style=
+"left: 0px; width: 20px;">2</div>
+</div>
+<pre class=""><span style=
+"padding-right: 0.1px;">      <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"unit size1of3"</span><span class="cm-tag cm-bracket">&gt;</span> </span></pre></div>
+<div style="position: relative;">
+<div class="CodeMirror-gutter-wrapper" style=
+"position: absolute; left: -29px;">
+<div class="CodeMirror-linenumber CodeMirror-gutter-elt" style=
+"left: 0px; width: 20px;">3</div>
+</div>
+<pre class=""><span style=
+"padding-right: 0.1px;">      <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span> </span></pre></div>
+<div style="position: relative;">
+<div class="CodeMirror-gutter-wrapper" style=
+"position: absolute; left: -29px;">
+<div class="CodeMirror-linenumber CodeMirror-gutter-elt" style=
+"left: 0px; width: 20px;">4</div>
+</div>
+<pre class=""><span style=
+"padding-right: 0.1px;">      <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"group size2of3"</span><span class="cm-tag cm-bracket">&gt;</span> </span></pre></div>
+<div style="position: relative;">
+<div class="CodeMirror-gutter-wrapper" style=
+"position: absolute; left: -29px;">
+<div class="CodeMirror-linenumber CodeMirror-gutter-elt" style=
+"left: 0px; width: 20px;">5</div>
+</div>
+<pre class=""><span style=
+"padding-right: 0.1px;">              <span class=
+"cm-tag cm-bracket">&lt;</span><span class=
+"cm-tag">div</span> <span class=
+"cm-attribute">class</span>=<span class=
+"cm-string">"unit size1of2"</span><span class=
+"cm-tag cm-bracket">&gt;</span></span></pre></div>
+<div style="position: relative;">
+<div class="CodeMirror-gutter-wrapper" style=
+"position: absolute; left: -29px;">
+<div class="CodeMirror-linenumber CodeMirror-gutter-elt" style=
+"left: 0px; width: 20px;">6</div>
+</div>
+<pre class=""><span style=
+"padding-right: 0.1px;">              <span class=
+"cm-tag cm-bracket">&lt;/</span><span class=
+"cm-tag">div</span><span class=
+"cm-tag cm-bracket">&gt;</span> </span></pre></div>
+<div style="position: relative;">
+<div class="CodeMirror-gutter-wrapper" style=
+"position: absolute; left: -29px;">
+<div class="CodeMirror-linenumber CodeMirror-gutter-elt" style=
+"left: 0px; width: 20px;">7</div>
+</div>
+<pre class=""><span style=
+"padding-right: 0.1px;">              <span class=
+"cm-tag cm-bracket">&lt;</span><span class=
+"cm-tag">div</span> <span class=
+"cm-attribute">class</span>=<span class=
+"cm-string">"lastUnit size1of2"</span><span class=
+"cm-tag cm-bracket">&gt;</span></span></pre></div>
+<div style="position: relative;">
+<div class="CodeMirror-gutter-wrapper" style=
+"position: absolute; left: -29px;">
+<div class="CodeMirror-linenumber CodeMirror-gutter-elt" style=
+"left: 0px; width: 20px;">8</div>
+</div>
+<pre class=""><span style=
+"padding-right: 0.1px;">              <span class=
+"cm-tag cm-bracket">&lt;/</span><span class=
+"cm-tag">div</span><span class=
+"cm-tag cm-bracket">&gt;</span> </span></pre></div>
+<div style="position: relative;">
+<div class="CodeMirror-gutter-wrapper" style=
+"position: absolute; left: -29px;">
+<div class="CodeMirror-linenumber CodeMirror-gutter-elt" style=
+"left: 0px; width: 20px;">9</div>
+</div>
+<pre class=""><span style=
+"padding-right: 0.1px;">      <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span> </span></pre></div>
+<div style="position: relative;">
+<div class="CodeMirror-gutter-wrapper" style=
+"position: absolute; left: -29px;">
+<div class="CodeMirror-linenumber CodeMirror-gutter-elt" style=
+"left: 0px; width: 20px;">10</div>
+</div>
+<pre class=""><span style="padding-right: 0.1px;"><span class=
+"cm-tag cm-bracket">&lt;/</span><span class=
+"cm-tag">div</span><span class=
+"cm-tag cm-bracket">&gt;</span></span></pre></div>
+<div style="position: relative;">
+<div class="CodeMirror-gutter-wrapper" style=
+"position: absolute; left: -29px;">
+<div class="CodeMirror-linenumber CodeMirror-gutter-elt" style=
+"left: 0px; width: 20px;">11</div>
+</div>
+<pre class=""><span style=
+"padding-right: 0.1px;"><span>​</span></span></pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div style=
+"position: absolute; height: 30px; width: 1px; top: 272px;"></div>
+<div class="CodeMirror-gutters" style="height: 272px;">
+<div class="CodeMirror-gutter CodeMirror-linenumbers" style=
+"width: 28px;"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="lastUnit size1of2 notes">
+<p>When nesting grids use the <code>group</code> class to eliminate
+gutters on the parent element of the columns that are being
+nested.</p>
+<p>Wherever possible, limit nesting grids to 2 levels deep.
+Anything more than that would require the use of
+<code>nopadding</code> on grid columns or <code>unit</code>s for
+correct grid alignment and indentation.</p>
+</div>
+</div>
+</div>
+<div id="grid-responsive" class="line below48">
+<div class="size1of1 lastUnit">
+<h3>Responsive columns</h3>
+<p class="full-width below24">Our different column sizes
+automatically change dimensions once they reach certain
+breakpoints. To illustrate, resize your browser window and you will
+see the grid columns change size.</p>
+<p class="full-width below24">The following table shows the
+media-query breakpoints.</p>
+<table class="mc-table">
+<thead>
+<tr class="odd">
+<th colspan="1"></th>
+<th colspan="3">Breakpoints</th>
+</tr>
+<tr class="even">
+<th>Grids</th>
+<th>960px or more</th>
+<th>Between 960px and 640px</th>
+<th>640px or less</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>size1of8</code></td>
+<td>12.5%</td>
+<td>50%</td>
+<td>100%</td>
+</tr>
+<tr class="even">
+<td><code>size1of4</code>, <code>size2of8</code></td>
+<td>25%</td>
+<td>100%</td>
+<td>100%</td>
+</tr>
+<tr class="odd">
+<td><code>size1of3</code></td>
+<td>33.33%</td>
+<td>100%</td>
+<td>100%</td>
+</tr>
+<tr class="even">
+<td><code>size3of8</code></td>
+<td>37.5%</td>
+<td>100%</td>
+<td>100%</td>
+</tr>
+<tr class="odd">
+<td><code>size1of2</code>, <code>size2of4</code>,
+<code>size4of8</code></td>
+<td>50%</td>
+<td>50%</td>
+<td>100%</td>
+</tr>
+<tr class="even">
+<td><code>size5of8</code></td>
+<td>62.5%</td>
+<td>100%</td>
+<td>100%</td>
+</tr>
+<tr class="odd">
+<td><code>size2of3</code></td>
+<td>66.67%</td>
+<td>100%</td>
+<td>100%</td>
+</tr>
+<tr class="even">
+<td><code>size3of4</code>, <code>size6of8</code></td>
+<td>75%</td>
+<td>100%</td>
+<td>100%</td>
+</tr>
+<tr class="odd">
+<td><code>size7of8</code></td>
+<td>87.5%</td>
+<td>100%</td>
+<td>100%</td>
+</tr>
+<tr class="even">
+<td><code>size1of1</code>, <code>size2of2</code>,
+<code>size3of3</code>, <code>size4of4</code>,
+<code>size8of8</code></td>
+<td>100%</td>
+<td>100%</td>
+<td>100%</td>
+</tr>
+<tr class="odd">
+<td colspan="4">Use <code>nochange</code> with
+<code>size1of2</code> and <code>size1of3</code> for halves and
+thirds at all breakpoints.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="nested-grid" class="line below48">
+<div class="size1of1 lastUnit">
+<h3>Groups in nested grids</h3>
+<div class="example">
+<div class="line section">
+<div class="size1of2 group bg-r1 alignc">
+<p class="nomargin">Group</p>
+<div class="line">
+<div class="size1of1 lastUnit">
+<p class="grid-filler mar-t0">1/2</p>
+<p class="grid-filler">1/2</p>
+</div>
+<div class="size1of1 lastGroup bg-r2">
+<div class="size1of2 unit">
+<p class="grid-filler">Nested column</p>
+</div>
+<div class="size1of2 lastUnit">
+<p class="grid-filler">Nested column</p>
+</div>
+</div>
+</div>
+</div>
+<div class="size1of2 lastGroup bg-r1 alignc">
+<p class="nomargin">Group</p>
+<div class="size1of2 unit">
+<p class="grid-filler mar-t0">1/2</p>
+</div>
+<div class="size1of2 lastGroup bg-r2">
+<div class="size1of2 unit">
+<p class="grid-filler">Nested column</p>
+</div>
+<div class="size1of2 lastUnit">
+<p class="grid-filler">Nested column</p>
+</div>
+</div>
+</div>
+</div>
+<div class="line">
+<div class="size1of1 lastUnit bg-g2 alignc">
+<p class="grid-filler">1/1</p>
+</div>
+</div>
+</div>
+</div>
+<div class="line">
+<div class="unit size1of2 code">
+<textarea class="pattern" style=
+"display: none;">&lt;div class="line section"&gt; &lt;div class="size1of2 group"&gt; &lt;div class="line"&gt; &lt;div class="size1of1 lastUnit"&gt; &lt;p&gt;1/2&lt;/p&gt; &lt;p&gt;1/2&lt;/p&gt; &lt;/div&gt; &lt;div class="size1of1 lastGroup"&gt; &lt;div class="size1of2 unit"&gt; &lt;p&gt;Nested column&lt;/p&gt; &lt;/div&gt; &lt;div class="size1of2 lastUnit"&gt; &lt;p&gt;Nested column&lt;/p&gt; &lt;/div&gt; &lt;/div&gt; &lt;/div&gt; &lt;/div&gt; &lt;div class="size1of2 lastGroup"&gt; &lt;div class="size1of2 unit"&gt; &lt;p&gt;1/2&lt;/p&gt; &lt;/div&gt; &lt;div class="size1of2 lastGroup"&gt; &lt;div class="size1of2 unit"&gt; &lt;p&gt;Nested column&lt;/p&gt; &lt;/div&gt; &lt;div class="size1of2 lastUnit"&gt; &lt;p&gt;Nested column&lt;/p&gt; &lt;/div&gt; &lt;/div&gt; &lt;/div&gt; &lt;/div&gt;</textarea>
+<div class="CodeMirror cm-s-default CodeMirror-wrap">
+<div style=
+"overflow: hidden; position: relative; width: 3px; height: 0px; top: 5px; left: 45px;">
+<textarea autocorrect="off" autocapitalize="off" spellcheck="false"
+style=
+"position: absolute; padding: 0px; width: 1000px; height: 1em; outline: none;"
+tabindex="0"></textarea></div>
+<div class="CodeMirror-hscrollbar" style=
+"left: 29px; min-height: 18px;">
+<div style="height: 100%; min-height: 1px; width: 0px;"></div>
+</div>
+<div class="CodeMirror-vscrollbar" style=
+"min-width: 18px; display: block; bottom: 0px;">
+<div style="min-width: 1px; height: 944px;"></div>
+</div>
+<div class="CodeMirror-scrollbar-filler"></div>
+<div class="CodeMirror-gutter-filler"></div>
+<div class="CodeMirror-scroll" tabindex="-1">
+<div class="CodeMirror-sizer" style=
+"margin-left: 29px; min-height: 944px;">
+<div style="position: relative; top: 0px;">
+<div class="CodeMirror-lines">
+<div style="position: relative; outline: none;">
+<div class="CodeMirror-measure">
+<pre>x</pre>
+<div class="CodeMirror-linenumber CodeMirror-gutter-elt">
+<div>39</div>
+</div>
+</div>
+<div class="CodeMirror-measure"></div>
+<div style="position: relative; z-index: 1;"></div>
+<div class="CodeMirror-cursors">
+<div class="CodeMirror-cursor" style=
+"left: 15px; top: 0px; height: 24px;">&nbsp;</div>
+</div>
+<div class="CodeMirror-code">
+<div style="position: relative;">
+<div class="CodeMirror-gutter-wrapper" style=
+"position: absolute; left: -29px;">
+<div class="CodeMirror-linenumber CodeMirror-gutter-elt" style=
+"left: 0px; width: 20px;">1</div>
+</div>
+<pre class=""><span style="padding-right: 0.1px;"><span class=
+"cm-tag cm-bracket">&lt;</span><span class=
+"cm-tag">div</span> <span class=
+"cm-attribute">class</span>=<span class=
+"cm-string">"line section"</span><span class=
+"cm-tag cm-bracket">&gt;</span> </span></pre></div>
+<div style="position: relative;">
+<div class="CodeMirror-gutter-wrapper" style=
+"position: absolute; left: -29px;">
+<div class="CodeMirror-linenumber CodeMirror-gutter-elt" style=
+"left: 0px; width: 20px;">2</div>
+</div>
+<pre class=""><span style=
+"padding-right: 0.1px;">      <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"size1of2 group"</span><span class="cm-tag cm-bracket">&gt;</span> </span></pre></div>
+<div style="position: relative;">
+<div class="CodeMirror-gutter-wrapper" style=
+"position: absolute; left: -29px;">
+<div class="CodeMirror-linenumber CodeMirror-gutter-elt" style=
+"left: 0px; width: 20px;">3</div>
+</div>
+<pre class=""><span style=
+"padding-right: 0.1px;">              <span class=
+"cm-tag cm-bracket">&lt;</span><span class=
+"cm-tag">div</span> <span class=
+"cm-attribute">class</span>=<span class=
+"cm-string">"line"</span><span class=
+"cm-tag cm-bracket">&gt;</span> </span></pre></div>
+<div style="position: relative;">
+<div class="CodeMirror-gutter-wrapper" style=
+"position: absolute; left: -29px;">
+<div class="CodeMirror-linenumber CodeMirror-gutter-elt" style=
+"left: 0px; width: 20px;">4</div>
+</div>
+<pre class=""><span style=
+"padding-right: 0.1px;">                        <span class=
+"cm-tag cm-bracket">&lt;</span><span class=
+"cm-tag">div</span> <span class=
+"cm-attribute">class</span>=<span class=
+"cm-string">"size1of1 lastUnit"</span><span class=
+"cm-tag cm-bracket">&gt;</span> </span></pre></div>
+<div style="position: relative;">
+<div class="CodeMirror-gutter-wrapper" style=
+"position: absolute; left: -29px;">
+<div class="CodeMirror-linenumber CodeMirror-gutter-elt" style=
+"left: 0px; width: 20px;">5</div>
+</div>
+<pre class=""><span style=
+"padding-right: 0.1px;">                                <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">p</span><span class="cm-tag cm-bracket">&gt;</span>1/2</span></pre></div>
+<div style="position: relative;">
+<div class="CodeMirror-gutter-wrapper" style=
+"position: absolute; left: -29px;">
+<div class="CodeMirror-linenumber CodeMirror-gutter-elt" style=
+"left: 0px; width: 20px;">6</div>
+</div>
+<pre class=""><span style=
+"padding-right: 0.1px;">                                <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">p</span><span class="cm-tag cm-bracket">&gt;</span> </span></pre></div>
+<div style="position: relative;">
+<div class="CodeMirror-gutter-wrapper" style=
+"position: absolute; left: -29px;">
+<div class="CodeMirror-linenumber CodeMirror-gutter-elt" style=
+"left: 0px; width: 20px;">7</div>
+</div>
+<pre class=""><span style=
+"padding-right: 0.1px;">                                <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">p</span><span class="cm-tag cm-bracket">&gt;</span>1/2</span></pre></div>
+<div style="position: relative;">
+<div class="CodeMirror-gutter-wrapper" style=
+"position: absolute; left: -29px;">
+<div class="CodeMirror-linenumber CodeMirror-gutter-elt" style=
+"left: 0px; width: 20px;">8</div>
+</div>
+<pre class=""><span style=
+"padding-right: 0.1px;">                                <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">p</span><span class="cm-tag cm-bracket">&gt;</span> </span></pre></div>
+<div style="position: relative;">
+<div class="CodeMirror-gutter-wrapper" style=
+"position: absolute; left: -29px;">
+<div class="CodeMirror-linenumber CodeMirror-gutter-elt" style=
+"left: 0px; width: 20px;">9</div>
+</div>
+<pre class=""><span style=
+"padding-right: 0.1px;">                        <span class=
+"cm-tag cm-bracket">&lt;/</span><span class=
+"cm-tag">div</span><span class=
+"cm-tag cm-bracket">&gt;</span> </span></pre></div>
+<div style="position: relative;">
+<div class="CodeMirror-gutter-wrapper" style=
+"position: absolute; left: -29px;">
+<div class="CodeMirror-linenumber CodeMirror-gutter-elt" style=
+"left: 0px; width: 20px;">10</div>
+</div>
+<pre class=""><span style=
+"padding-right: 0.1px;">                        <span class=
+"cm-tag cm-bracket">&lt;</span><span class=
+"cm-tag">div</span> <span class=
+"cm-attribute">class</span>=<span class=
+"cm-string">"size1of1 lastGroup"</span><span class=
+"cm-tag cm-bracket">&gt;</span> </span></pre></div>
+<div style="position: relative;">
+<div class="CodeMirror-gutter-wrapper" style=
+"position: absolute; left: -29px;">
+<div class="CodeMirror-linenumber CodeMirror-gutter-elt" style=
+"left: 0px; width: 20px;">11</div>
+</div>
+<pre class=""><span style=
+"padding-right: 0.1px;">                                <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"size1of2 unit"</span><span class="cm-tag cm-bracket">&gt;</span> </span></pre></div>
+<div style="position: relative;">
+<div class="CodeMirror-gutter-wrapper" style=
+"position: absolute; left: -29px;">
+<div class="CodeMirror-linenumber CodeMirror-gutter-elt" style=
+"left: 0px; width: 20px;">12</div>
+</div>
+<pre class=""><span style=
+"padding-right: 0.1px;">                                        <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">p</span><span class="cm-tag cm-bracket">&gt;</span>Nested column</span></pre></div>
+<div style="position: relative;">
+<div class="CodeMirror-gutter-wrapper" style=
+"position: absolute; left: -29px;">
+<div class="CodeMirror-linenumber CodeMirror-gutter-elt" style=
+"left: 0px; width: 20px;">13</div>
+</div>
+<pre class=""><span style=
+"padding-right: 0.1px;">                                        <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">p</span><span class="cm-tag cm-bracket">&gt;</span> </span></pre></div>
+<div style="position: relative;">
+<div class="CodeMirror-gutter-wrapper" style=
+"position: absolute; left: -29px;">
+<div class="CodeMirror-linenumber CodeMirror-gutter-elt" style=
+"left: 0px; width: 20px;">14</div>
+</div>
+<pre class=""><span style=
+"padding-right: 0.1px;">                                <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span> </span></pre></div>
+<div style="position: relative;">
+<div class="CodeMirror-gutter-wrapper" style=
+"position: absolute; left: -29px;">
+<div class="CodeMirror-linenumber CodeMirror-gutter-elt" style=
+"left: 0px; width: 20px;">15</div>
+</div>
+<pre class=""><span style=
+"padding-right: 0.1px;">                                <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"size1of2 lastUnit"</span><span class="cm-tag cm-bracket">&gt;</span> </span></pre></div>
+<div style="position: relative;">
+<div class="CodeMirror-gutter-wrapper" style=
+"position: absolute; left: -29px;">
+<div class="CodeMirror-linenumber CodeMirror-gutter-elt" style=
+"left: 0px; width: 20px;">16</div>
+</div>
+<pre class=""><span style=
+"padding-right: 0.1px;">                                        <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">p</span><span class="cm-tag cm-bracket">&gt;</span>Nested column</span></pre></div>
+<div style="position: relative;">
+<div class="CodeMirror-gutter-wrapper" style=
+"position: absolute; left: -29px;">
+<div class="CodeMirror-linenumber CodeMirror-gutter-elt" style=
+"left: 0px; width: 20px;">17</div>
+</div>
+<pre class=""><span style=
+"padding-right: 0.1px;">                                        <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">p</span><span class="cm-tag cm-bracket">&gt;</span> </span></pre></div>
+<div style="position: relative;">
+<div class="CodeMirror-gutter-wrapper" style=
+"position: absolute; left: -29px;">
+<div class="CodeMirror-linenumber CodeMirror-gutter-elt" style=
+"left: 0px; width: 20px;">18</div>
+</div>
+<pre class=""><span style=
+"padding-right: 0.1px;">                                <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span> </span></pre></div>
+<div style="position: relative;">
+<div class="CodeMirror-gutter-wrapper" style=
+"position: absolute; left: -29px;">
+<div class="CodeMirror-linenumber CodeMirror-gutter-elt" style=
+"left: 0px; width: 20px;">19</div>
+</div>
+<pre class=""><span style=
+"padding-right: 0.1px;">                        <span class=
+"cm-tag cm-bracket">&lt;/</span><span class=
+"cm-tag">div</span><span class=
+"cm-tag cm-bracket">&gt;</span> </span></pre></div>
+<div style="position: relative;">
+<div class="CodeMirror-gutter-wrapper" style=
+"position: absolute; left: -29px;">
+<div class="CodeMirror-linenumber CodeMirror-gutter-elt" style=
+"left: 0px; width: 20px;">20</div>
+</div>
+<pre class=""><span style=
+"padding-right: 0.1px;">              <span class=
+"cm-tag cm-bracket">&lt;/</span><span class=
+"cm-tag">div</span><span class=
+"cm-tag cm-bracket">&gt;</span> </span></pre></div>
+<div style="position: relative;">
+<div class="CodeMirror-gutter-wrapper" style=
+"position: absolute; left: -29px;">
+<div class="CodeMirror-linenumber CodeMirror-gutter-elt" style=
+"left: 0px; width: 20px;">21</div>
+</div>
+<pre class=""><span style=
+"padding-right: 0.1px;">      <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span> </span></pre></div>
+<div style="position: relative;">
+<div class="CodeMirror-gutter-wrapper" style=
+"position: absolute; left: -29px;">
+<div class="CodeMirror-linenumber CodeMirror-gutter-elt" style=
+"left: 0px; width: 20px;">22</div>
+</div>
+<pre class=""><span style=
+"padding-right: 0.1px;">      <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"size1of2 lastGroup"</span><span class="cm-tag cm-bracket">&gt;</span> </span></pre></div>
+<div style="position: relative;">
+<div class="CodeMirror-gutter-wrapper" style=
+"position: absolute; left: -29px;">
+<div class="CodeMirror-linenumber CodeMirror-gutter-elt" style=
+"left: 0px; width: 20px;">23</div>
+</div>
+<pre class=""><span style=
+"padding-right: 0.1px;">              <span class=
+"cm-tag cm-bracket">&lt;</span><span class=
+"cm-tag">div</span> <span class=
+"cm-attribute">class</span>=<span class=
+"cm-string">"size1of2 unit"</span><span class=
+"cm-tag cm-bracket">&gt;</span> </span></pre></div>
+<div style="position: relative;">
+<div class="CodeMirror-gutter-wrapper" style=
+"position: absolute; left: -29px;">
+<div class="CodeMirror-linenumber CodeMirror-gutter-elt" style=
+"left: 0px; width: 20px;">24</div>
+</div>
+<pre class=""><span style=
+"padding-right: 0.1px;">                        <span class=
+"cm-tag cm-bracket">&lt;</span><span class=
+"cm-tag">p</span><span class=
+"cm-tag cm-bracket">&gt;</span>1/2</span></pre></div>
+<div style="position: relative;">
+<div class="CodeMirror-gutter-wrapper" style=
+"position: absolute; left: -29px;">
+<div class="CodeMirror-linenumber CodeMirror-gutter-elt" style=
+"left: 0px; width: 20px;">25</div>
+</div>
+<pre class=""><span style=
+"padding-right: 0.1px;">                        <span class=
+"cm-tag cm-bracket">&lt;/</span><span class=
+"cm-tag">p</span><span class=
+"cm-tag cm-bracket">&gt;</span> </span></pre></div>
+<div style="position: relative;">
+<div class="CodeMirror-gutter-wrapper" style=
+"position: absolute; left: -29px;">
+<div class="CodeMirror-linenumber CodeMirror-gutter-elt" style=
+"left: 0px; width: 20px;">26</div>
+</div>
+<pre class=""><span style=
+"padding-right: 0.1px;">              <span class=
+"cm-tag cm-bracket">&lt;/</span><span class=
+"cm-tag">div</span><span class=
+"cm-tag cm-bracket">&gt;</span> </span></pre></div>
+<div style="position: relative;">
+<div class="CodeMirror-gutter-wrapper" style=
+"position: absolute; left: -29px;">
+<div class="CodeMirror-linenumber CodeMirror-gutter-elt" style=
+"left: 0px; width: 20px;">27</div>
+</div>
+<pre class=""><span style=
+"padding-right: 0.1px;">              <span class=
+"cm-tag cm-bracket">&lt;</span><span class=
+"cm-tag">div</span> <span class=
+"cm-attribute">class</span>=<span class=
+"cm-string">"size1of2 lastGroup"</span><span class=
+"cm-tag cm-bracket">&gt;</span> </span></pre></div>
+<div style="position: relative;">
+<div class="CodeMirror-gutter-wrapper" style=
+"position: absolute; left: -29px;">
+<div class="CodeMirror-linenumber CodeMirror-gutter-elt" style=
+"left: 0px; width: 20px;">28</div>
+</div>
+<pre class=""><span style=
+"padding-right: 0.1px;">                        <span class=
+"cm-tag cm-bracket">&lt;</span><span class=
+"cm-tag">div</span> <span class=
+"cm-attribute">class</span>=<span class=
+"cm-string">"size1of2 unit"</span><span class=
+"cm-tag cm-bracket">&gt;</span> </span></pre></div>
+<div style="position: relative;">
+<div class="CodeMirror-gutter-wrapper" style=
+"position: absolute; left: -29px;">
+<div class="CodeMirror-linenumber CodeMirror-gutter-elt" style=
+"left: 0px; width: 20px;">29</div>
+</div>
+<pre class=""><span style=
+"padding-right: 0.1px;">                                <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">p</span><span class="cm-tag cm-bracket">&gt;</span>Nested column</span></pre></div>
+<div style="position: relative;">
+<div class="CodeMirror-gutter-wrapper" style=
+"position: absolute; left: -29px;">
+<div class="CodeMirror-linenumber CodeMirror-gutter-elt" style=
+"left: 0px; width: 20px;">30</div>
+</div>
+<pre class=""><span style=
+"padding-right: 0.1px;">                                <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">p</span><span class="cm-tag cm-bracket">&gt;</span> </span></pre></div>
+<div style="position: relative;">
+<div class="CodeMirror-gutter-wrapper" style=
+"position: absolute; left: -29px;">
+<div class="CodeMirror-linenumber CodeMirror-gutter-elt" style=
+"left: 0px; width: 20px;">31</div>
+</div>
+<pre class=""><span style=
+"padding-right: 0.1px;">                        <span class=
+"cm-tag cm-bracket">&lt;/</span><span class=
+"cm-tag">div</span><span class=
+"cm-tag cm-bracket">&gt;</span> </span></pre></div>
+<div style="position: relative;">
+<div class="CodeMirror-gutter-wrapper" style=
+"position: absolute; left: -29px;">
+<div class="CodeMirror-linenumber CodeMirror-gutter-elt" style=
+"left: 0px; width: 20px;">32</div>
+</div>
+<pre class=""><span style=
+"padding-right: 0.1px;">                        <span class=
+"cm-tag cm-bracket">&lt;</span><span class=
+"cm-tag">div</span> <span class=
+"cm-attribute">class</span>=<span class=
+"cm-string">"size1of2 lastUnit"</span><span class=
+"cm-tag cm-bracket">&gt;</span> </span></pre></div>
+<div style="position: relative;">
+<div class="CodeMirror-gutter-wrapper" style=
+"position: absolute; left: -29px;">
+<div class="CodeMirror-linenumber CodeMirror-gutter-elt" style=
+"left: 0px; width: 20px;">33</div>
+</div>
+<pre class=""><span style=
+"padding-right: 0.1px;">                                <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">p</span><span class="cm-tag cm-bracket">&gt;</span>Nested column</span></pre></div>
+<div style="position: relative;">
+<div class="CodeMirror-gutter-wrapper" style=
+"position: absolute; left: -29px;">
+<div class="CodeMirror-linenumber CodeMirror-gutter-elt" style=
+"left: 0px; width: 20px;">34</div>
+</div>
+<pre class=""><span style=
+"padding-right: 0.1px;">                                <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">p</span><span class="cm-tag cm-bracket">&gt;</span> </span></pre></div>
+<div style="position: relative;">
+<div class="CodeMirror-gutter-wrapper" style=
+"position: absolute; left: -29px;">
+<div class="CodeMirror-linenumber CodeMirror-gutter-elt" style=
+"left: 0px; width: 20px;">35</div>
+</div>
+<pre class=""><span style=
+"padding-right: 0.1px;">                        <span class=
+"cm-tag cm-bracket">&lt;/</span><span class=
+"cm-tag">div</span><span class=
+"cm-tag cm-bracket">&gt;</span> </span></pre></div>
+<div style="position: relative;">
+<div class="CodeMirror-gutter-wrapper" style=
+"position: absolute; left: -29px;">
+<div class="CodeMirror-linenumber CodeMirror-gutter-elt" style=
+"left: 0px; width: 20px;">36</div>
+</div>
+<pre class=""><span style=
+"padding-right: 0.1px;">              <span class=
+"cm-tag cm-bracket">&lt;/</span><span class=
+"cm-tag">div</span><span class=
+"cm-tag cm-bracket">&gt;</span> </span></pre></div>
+<div style="position: relative;">
+<div class="CodeMirror-gutter-wrapper" style=
+"position: absolute; left: -29px;">
+<div class="CodeMirror-linenumber CodeMirror-gutter-elt" style=
+"left: 0px; width: 20px;">37</div>
+</div>
+<pre class=""><span style=
+"padding-right: 0.1px;">      <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span> </span></pre></div>
+<div style="position: relative;">
+<div class="CodeMirror-gutter-wrapper" style=
+"position: absolute; left: -29px;">
+<div class="CodeMirror-linenumber CodeMirror-gutter-elt" style=
+"left: 0px; width: 20px;">38</div>
+</div>
+<pre class=""><span style="padding-right: 0.1px;"><span class=
+"cm-tag cm-bracket">&lt;/</span><span class=
+"cm-tag">div</span><span class=
+"cm-tag cm-bracket">&gt;</span></span></pre></div>
+<div style="position: relative;">
+<div class="CodeMirror-gutter-wrapper" style=
+"position: absolute; left: -29px;">
+<div class="CodeMirror-linenumber CodeMirror-gutter-elt" style=
+"left: 0px; width: 20px;">39</div>
+</div>
+<pre class=""><span style=
+"padding-right: 0.1px;"><span>​</span></span></pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div style=
+"position: absolute; height: 30px; width: 1px; top: 944px;"></div>
+<div class="CodeMirror-gutters" style="height: 944px;">
+<div class="CodeMirror-gutter CodeMirror-linenumbers" style=
+"width: 28px;"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="lastUnit size1of2">
+<div class="notes">
+<p>The <code>group</code> class is used when columns are nested
+inside of grids and is applied to the parent wrapper of the nested
+columns.</p>
+<p>It provides a padding-less container for nested columns and
+subsequently, helps avoid the indentation and side-padding issues
+otherwise seen on nested columns with <code>unit</code> and
+<code>lastUnit</code> parent classes.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="dijitToasterClip" dojoattachpoint="clipNode" id="toast"
+style="display: none;" widgetid="toast">
+<div class="dijitToasterContainer" dojoattachpoint="containerNode"
+dojoattachevent="onclick:onSelect" style="opacity: 1;">
+<div class="dijitToasterContent" dojoattachpoint="contentNode">
+</div>
+</div>
+</div>
+<div class="dijitDialog" role="dialog" aria-labelledby=
+"popup-win-blocked_title" id="popup-win-blocked" style=
+"display: none; position: absolute;" widgetid="popup-win-blocked">
+<div data-dojo-attach-point="titleBar" class="dijitDialogTitleBar">
+<span data-dojo-attach-point="titleNode" class="dijitDialogTitle"
+id="popup-win-blocked_title" role="heading" level="1">Pop-up
+Windows Are Blocked</span> <span data-dojo-attach-point=
+"closeButtonNode" class="dijitDialogCloseIcon"
+data-dojo-attach-event="ondijitclick: onCancel" title="Cancel"
+role="button" tabindex="-1"><span data-dojo-attach-point=
+"closeText" class="closeText" title="Cancel">x</span></span></div>
+<div data-dojo-attach-point="containerNode" class=
+"dijitDialogPaneContent">
+<div class="dijitDialogPaneContentArea">
+<p>Looks like your browser is blocking pop-up windows.<br>
+Learn how to <a href=
+"http://kb.mailchimp.com/campaigns/previews-and-tests/enable-pop-ups-in-your-browser/?"
+class="info" target="_blank" data-kb-article=
+"/campaigns/previews-and-tests/enable-pop-ups-in-your-browser/">enable
+them</a>.</p>
+</div>
+<div class="dijitDialogPaneActionBar"><a href=
+"https://ux.mailchimp.com/patterns/#" class="button p0" onclick=
+"dijit.byId('popup-win-blocked').hide(); return false;" role=
+"button">Close</a></div>
+</div>
+</div>
+</body>
+</html>
